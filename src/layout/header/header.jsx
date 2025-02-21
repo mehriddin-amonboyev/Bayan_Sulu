@@ -17,9 +17,8 @@ import {
 } from "../../assets/svg/export"
 
 export const Header = () => {
-
     return (
-        <>
+        <Container padding={0}>
             <Box padding={0}>
                 <Stack paddingTop={3.75} direction="row" spacing={7.5} alignItems={"center"}>
                     <Box pl={0} component="img" src={logo} alt="logo" width={220} />
@@ -105,6 +104,6 @@ export const Header = () => {
                     }}>Контакты</Typography>
                 </Stack>
             </Box>
-        </>
+        </Container>
     )
 }
