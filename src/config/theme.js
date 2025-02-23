@@ -44,7 +44,7 @@ export const theme = createTheme({
             fontWeight: 400,
             fontSize: "18px",
             lineHeight: "100%",
-            color: "#1d1d1d",
+            color: COLORS.titleColor,
         },
         h4: {
             fontWeight: 400,
@@ -80,13 +80,6 @@ export const theme = createTheme({
             styleOverrides: {
                 root: {
                     // padding: 0,
-                }
-            }
-        },
-        MuiIconButton: {
-            styleOverrides: {
-                root: {
-                    // display: "block"
                 }
             }
         }

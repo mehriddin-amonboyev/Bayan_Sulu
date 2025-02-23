@@ -4,4 +4,6 @@ export const COLORS = {
     titleColor: "#1d1d1d",
     greyText: '#8e8e8e',
     lightGrey: '#f9f9f9',
+    green: "#648e7a",
+    white: "#fff"
 }

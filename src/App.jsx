@@ -10,6 +10,7 @@ function App() {
         <Route path='/' element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path='product/:id' element={<Product />} />
+          <Route path="*" element={<Home />} />
         </Route>
       </Routes>
     </>

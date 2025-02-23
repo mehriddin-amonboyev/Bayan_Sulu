@@ -19,7 +19,7 @@ const CustomLink = styled(Link)`
 
 export const Navbar = () => {
   return (
-    <Box py={"30px"} bgcolor={COLORS.lightGrey}>
+    <Box py={"30px"} >
       <Container maxWidth="xl">
         <Stack direction={"row"} justifyContent={"space-between"}>
           {navbarLinks.map((item) => (

@@ -9,12 +9,17 @@ export const productData = [
         reviews: 5,
         installment: {
             monthlyPayment: 12,
-            price: 13333.33
+            price: 13.333
         },
         price: 160000,
         img: gilam3,
         status: "new",
         rating: 3,
+        discount: {
+            about: true,
+            price: 100000,
+        },
+        commentary: 0,
     },
     {
         id: 2,
@@ -25,12 +30,17 @@ export const productData = [
         reviews: 5,
         installment: {
             monthlyPayment: 12,
-            price: 13333.33
+            price: 13.333
         },
         price: 160000,
         img: gilam3,
         status: "new",
         rating: 4,
+        discount: {
+            about: true,
+            price: 100000,
+        },
+        commentary: 20,
     },
     {
         id: 3,
@@ -41,12 +51,17 @@ export const productData = [
         reviews: 5,
         installment: {
             monthlyPayment: 12,
-            price: 13333.33
+            price: 13.333
         },
         price: 160000,
         img: gilam3,
         status: "new",
         rating: 2,
+        discount: {
+            about: true,
+            price: 100000,
+        },
+        commentary: 10,
     },
     {
         id: 4,
@@ -57,12 +72,16 @@ export const productData = [
         reviews: 5,
         installment: {
             monthlyPayment: 12,
-            price: 13333.33
+            price: 13.333
         },
         price: 160000,
         img: gilam3,
         status: "new",
         rating: 3,
+        discount: {
+            about: false,
+        },
+        commentary: 30,
     },
     {
         id: 5,
@@ -73,11 +92,15 @@ export const productData = [
         reviews: 5,
         installment: {
             monthlyPayment: 12,
-            price: 13333.33
+            price: 13.333
         },
         price: 160000,
         img: gilam3,
         status: "new",
         rating: 4,
+        discount: {
+            about: false,
+        },
+        commentary: 0,
     },
 ]    

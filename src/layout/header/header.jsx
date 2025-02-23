@@ -2,6 +2,7 @@ import { Container, Stack } from "@mui/material";
 import { Navbar } from "./components/navbar";
 import { HeaderSearch } from "./components/header-search";
 import { HeaderButtons } from "./components/header-buttons";
+import { COLORS } from "../../config/colors";
 
 export const Header = () => {
     return (
@@ -11,7 +12,7 @@ export const Header = () => {
                 <HeaderButtons />
             </Stack>
 
-            <Navbar />
+            <Navbar bgcolor={COLORS.lightGrey} />
 
         </Container>
     )
