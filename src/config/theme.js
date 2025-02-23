@@ -41,11 +41,16 @@ export const theme = createTheme({
             color: COLORS.titleColor,
         },
         h3: {
-            // fontFamily: "Montserrat",
             fontWeight: 400,
             fontSize: "18px",
             lineHeight: "100%",
             color: "#1d1d1d",
+        },
+        h4: {
+            fontWeight: 400,
+            fontSize: "14px",
+            lineHeight: "140%",
+            color: COLORS.titleColor,
         }
     },
     components: {
@@ -74,14 +79,14 @@ export const theme = createTheme({
             },
             styleOverrides: {
                 root: {
-                    padding: 0,
+                    // padding: 0,
                 }
             }
         },
-        MuiLink: {
+        MuiIconButton: {
             styleOverrides: {
                 root: {
-                    textDecoration: "none",
+                    // display: "block"
                 }
             }
         }

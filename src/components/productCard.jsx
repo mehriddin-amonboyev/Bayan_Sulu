@@ -1,8 +1,8 @@
 import React from "react";
-import img from "../assets/image/gilam1.png";
+import img from "../assets/image/gilam3.png";
 import styled from "@emotion/styled";
-import { Box, Rating, Typography } from "@mui/material";
-import { COLORS } from "../config/colors";
+import { Box, Rating, Stack, Typography } from "@mui/material";
+import { LikeIcon } from "../assets/svg/likeIcon";
 
 const ProductWrapper = styled.div`
   border-radius: 10px;
@@ -28,34 +28,29 @@ const CardBadge = styled.span`
   top: 20px;
   left: 0;
 `;
+const Like = styled.span`
+  padding:3px;
+  position:absolute;
+  top:20px;
+  right:20px;
 
-export const ProductCard = () => {
+`
+
+export const ProductCard = ({product}) => {
   return (
     <ProductWrapper>
-      <CardBadge>Новинка</CardBadge>
-      <Box mb={"20px"} textAlign={"center"}>
-        <img src={img} alt="img" />
+      <Stack direction={"row"} justifyContent={"space-between"}>
+        <CardBadge> Новинка </CardBadge>
+        <Like > <LikeIcon /> </Like>
+      </Stack>
+      <Box mx={"37px"} mb={"20px"} textAlign={"center"} width={"176px"} height={"236px"} overflow={"hidden"}>
+        <img width={"100%"} height={"100%"} objectFit={"cover"} src={img} alt="img" />
       </Box>
-      <Typography
-        mb={"8px"}
-        maxWidth={"175px"}
-        fontSize={"18px"}
-        color={COLORS.titleColor}
-      >
-        Aster Q893A LVIZON LVIZON
-      </Typography>
-      <Typography
-        mb={"8px"}
-        maxWidth={"175px"}
-        fontSize={"14px"}
-        color={COLORS.titleColor}
-      >
-        Размер: 60x100
-      </Typography>
-      <Typography mb={"8px"} fontSize={"14px"} color={COLORS.titleColor}>
-        Производитель: Казахстан
-      </Typography>
-      <Rating readOnly value={4} />
-    </ProductWrapper>
+      <Stack spacing={1}>
+        <Typography variant="h3" maxWidth={"175px"}> Aster Q893A LVIZON LVIZON</Typography>
+        <Typography variant="h4"> Размер: 60x100 </Typography>
+        <Typography variant="h4"> Производитель: Казахстан </Typography>
+      </Stack >
+      <Rating readOnly value={4} /> </ProductWrapper>
   );
 };
