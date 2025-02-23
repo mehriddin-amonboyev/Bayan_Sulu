@@ -1,9 +1,9 @@
 import { Box, Container, Stack } from "@mui/material";
 import React from "react";
-import { navbarLinks } from "../data";
 import { Link } from "react-router-dom";
-import { COLORS } from "../../config/colors";
 import styled from "@emotion/styled";
+import { navbarLinks } from "../heroData";
+import { COLORS } from "../../../config/colors";
 
 const CustomLink = styled(Link)`
   text-decoration: none;

@@ -27,8 +27,9 @@ export const theme = createTheme({
             sm: 320,
             md: 768,
             lg: 992,
-            xl: 1323,
+            xl: 1280,
         },
+
     },
     typography: {
         fontFamily: ["Ubuntu", "serif"].join(","),
@@ -39,6 +40,13 @@ export const theme = createTheme({
             lineHeight: "130%",
             color: COLORS.titleColor,
         },
+        h3: {
+            // fontFamily: "Montserrat",
+            fontWeight: 400,
+            fontSize: "18px",
+            lineHeight: "100%",
+            color: "#1d1d1d",
+        }
     },
     components: {
         MuiButton: {
@@ -60,5 +68,22 @@ export const theme = createTheme({
                 },
             ],
         },
+        MuiContainer: {
+            defaultProps: {
+                disableGutters: true,
+            },
+            styleOverrides: {
+                root: {
+                    padding: 0,
+                }
+            }
+        },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    textDecoration: "none",
+                }
+            }
+        }
     },
 })

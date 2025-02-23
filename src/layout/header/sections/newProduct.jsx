@@ -1,13 +1,12 @@
 import { Box, Button, Container, Link, Stack, Typography } from "@mui/material";
-import gilam1 from "../../assets/image/gilam1.png";
-import gilam2 from "../../assets/image/gilam2.png";
-import { productData } from "../../data/productData";
-import { ProductCard } from "../../components/productCard"
+import gilam1 from "../../../assets/image/gilam1.png";
+import gilam2 from "../../../assets/image/gilam2.png";
+import { productData } from "../../../data/productData";
+import { ProductCard } from "../../../components/productCard"
 
 export const NewProduct = () => {
     return (
         <>
-
             <Box padding={0} sx={{ background: "#618c78" }}>
                 <Container>
                     <Stack direction="row" alignItems="center">
@@ -38,16 +37,9 @@ export const NewProduct = () => {
                     </Stack>
                 </Container>
             </Box>
-            <Container sx={{ paddingTop: "99px" }}>
-                <Stack direction={"row" } spacing={4} alignItems={"center"}>
-                    <Typography sx={{
-                        fontWeight: 700,
-                        fontSize: "40px",
-                        lineHeight: "130%",
-                        color: "#1d1d1d",
-                    }}>
-                        Новинки
-                    </Typography>
+            <Container>
+                <Stack direction={"row"} spacing={4} alignItems={"center"}>
+                    <Typography> Новинки </Typography>
                     <Typography sx={{
                         fontWeight: 400,
                         fontSize: "18px",
@@ -62,7 +54,7 @@ export const NewProduct = () => {
                 <Stack direction={"row"} spacing={5}>
                     {productData.map((item) =>
                         item.status === "new" ? (
-                            <Box  key={item.id}>
+                            <Box key={item.id}>
                                 <ProductCard
                                     key={item.id}
                                     product={item}

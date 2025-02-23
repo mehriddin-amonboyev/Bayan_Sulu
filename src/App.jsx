@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import { MainLayout } from './layout/mainLayout';
-import { NewProduct } from './section/newProduct/newProduct';
+import { NewProduct } from './layout/header/sections/newProduct';
 import { Home } from './pages/home/home';
-function App() {
 
+function App() {
   return (
     <>
       <Routes >

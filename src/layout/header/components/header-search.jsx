@@ -8,9 +8,8 @@ import {
 } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.svg";
-import { LocationIcon } from "../../assets/location-icon";
-import { SearchIcon } from "../../assets/search-icon";
+import logo from "../../../assets/image/siteLogo.png";
+import { LocationIcon, SearchIcon } from "../../../assets/svg/export";
 
 export const HeaderSearch = () => {
   return (
