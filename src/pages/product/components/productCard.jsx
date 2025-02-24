@@ -46,7 +46,7 @@ export const ProductCard = ({ product }) => {
                         objectFit: "cover",
                     }}
                 />
-                <Box>
+                <Box> 
                     <Stack direction={'row'} spacing={6}>
                         <Box>
                             <Typography variant="h4" color={COLORS.greyText}>Цена:</Typography>
