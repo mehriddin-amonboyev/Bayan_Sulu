@@ -1,4 +1,8 @@
 import gilam3 from '../assets/image/gilam3.png';
+import gilam1_1 from '../assets/image/gilam1.1.png';
+import gilam1_2 from '../assets/image/gilam1.2.png';
+import gilam1_3 from '../assets/image/gilam1.3.png';
+import gilam1_4 from '../assets/image/gilam1.4.png';
 export const productData = [
     {
         id: 1,
@@ -33,7 +37,7 @@ export const productData = [
             price: 13.333
         },
         price: 160000,
-        img: gilam3,
+        img: [gilam1_1, gilam1_2, gilam1_3, gilam1_4],
         status: "new",
         rating: 4,
         discount: {

@@ -10,13 +10,11 @@ export const Product = () => {
         return "not found"
     }
     return (
-        <Container>
-            <Box>
-                {productData.map((item) => item.id == id  ? (
-                    <ProductCard key={item.id} product = {item} />
-                ) : null
-                )}
-            </Box>
+        <Container maxWidth={"xl"}>
+            {productData.map((item) => item.id == id ? (
+                <ProductCard key={item.id} product={item} />
+            ) : null
+            )}
         </Container>
     )
 }

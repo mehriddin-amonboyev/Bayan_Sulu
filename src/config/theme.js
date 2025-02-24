@@ -51,6 +51,12 @@ export const theme = createTheme({
             fontSize: "14px",
             lineHeight: "140%",
             color: COLORS.titleColor,
+        },
+        h5: {
+            fontWeight: 400,
+            fontSize: "40px",
+            lineHeight: "145%",
+            color: COLORS.titleColor,
         }
     },
     components: {
@@ -79,7 +85,8 @@ export const theme = createTheme({
             },
             styleOverrides: {
                 root: {
-                    // padding: 0,
+                    padding: 0,
+                    // margin: "0 80px",
                 }
             }
         }
